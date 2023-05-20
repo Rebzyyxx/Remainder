@@ -14,6 +14,7 @@ import android.widget.EditText;
 import android.widget.TextView;
 
 import java.util.Calendar;
+import java.util.List;
 
 public class NoteDetailsActivity extends AppCompatActivity {
 

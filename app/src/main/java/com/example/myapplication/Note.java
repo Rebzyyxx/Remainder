@@ -12,6 +12,10 @@ public class Note {
         this.text = text;
     }
 
+    public Note() {
+
+    }
+
     public String getTitle() {
         return title;
     }

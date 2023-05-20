@@ -11,39 +11,22 @@
         android:id="@+id/noteTitle"
         android:layout_width="383dp"
         android:layout_height="40dp"
-        android:hint="Заголовок"
         android:background="@drawable/background"
-        android:textColorHint="#322520"
-        android:textColor="#2B201B"
+        android:hint="Заголовок"
         android:padding="10dp"
+        android:textColor="#2B201B"
+        android:textColorHint="#322520"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.571"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.023" />
+        app:layout_constraintVertical_bias="0.169" />
 
     <EditText
         android:id="@+id/noteText"
         android:layout_width="382dp"
         android:layout_height="233dp"
-        android:hint="Текст"
-        android:background="@drawable/background"
-        android:textColorHint="#322520"
-        android:textColor="#2B201B"
-        android:padding="10dp"
-        android:gravity="top"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.586"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.138" />
-
-    <EditText
-        android:id="@+id/reminderTimeEditText"
-        android:layout_width="378dp"
-        android:layout_height="217dp"
         android:background="@drawable/background"
         android:gravity="top"
         android:hint="Текст"
@@ -55,36 +38,53 @@
         app:layout_constraintHorizontal_bias="0.586"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.901" />
+        app:layout_constraintVertical_bias="0.349" />
 
     <Button
-        android:id="@+id/saveNoteButton"
-        android:layout_width="252dp"
-        android:layout_height="49dp"
-        android:text="Сохранить"
+        android:id="@+id/buttonBack"
+        android:layout_width="98dp"
+        android:layout_height="41dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="24dp"
         android:backgroundTint="#734E47"
+        android:text="Назад"
         android:textColor="#EABBAE"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:textSize="14sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintHorizontal_bias="0.067"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.479" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/set_reminder_button"
-        android:layout_width="159dp"
-        android:layout_height="37dp"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginTop="404dp"
+        android:layout_width="162dp"
+        android:layout_height="56dp"
+        android:layout_gravity="end"
+        android:layout_marginEnd="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginBottom="240dp"
         android:backgroundTint="#734E47"
         android:text="Напоминание"
         android:textColor="#EABBAE"
         android:textSize="14sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/saveNoteButton"
+        android:layout_width="145dp"
+        android:layout_height="58dp"
+        android:layout_gravity="left"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginBottom="240dp"
+        android:backgroundTint="#734E47"
+        android:text="Сохранить"
+        android:textColor="#EABBAE"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
